@@ -1,0 +1,47 @@
+  # {getLikes(likeInput:{})}
+
+# mutation{
+#   createUser(userInput:{
+#     email:"rajan@cm.com",
+#     password:"12345678",
+#     firstname:"jha",
+#     lastname:"rajan",
+#   }){
+#     email
+#   }
+# }
+
+{
+  login(email:"cm@cm.com",password:"12345678"){
+    userId,token
+  }
+}
+
+
+
+# # mutation{
+# #   createComment(commentInput:
+# #     {content:"ac",
+# #       userId:"5531e3f6-ea94-49de-93e7-5f9455605738",
+# #     videoId:"7f643cad-5de7-4f91-b3f2-438949258ab3"}){
+# #     content
+# #   }
+# # }
+# {
+#  getVideos{
+#             id
+#             title
+           
+#             createdAt
+#             updatedAt
+#             userId
+#   Comments{
+#                 id
+#               }
+#             writer{
+#                 firstname
+#                 lastname
+#                 image
+             
+#             }
+#             }}
